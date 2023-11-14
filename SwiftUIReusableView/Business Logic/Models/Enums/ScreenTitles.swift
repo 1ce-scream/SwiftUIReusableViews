@@ -9,6 +9,7 @@ import Foundation
 
 enum ScreenTitles: String {
     case personList = "person.list.screen.title"
+    case mainView = "main.view.screen.title"
     
     func localized() -> String {
         NSLocalizedString(self.rawValue, comment: "")

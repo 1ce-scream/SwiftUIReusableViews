@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftUIReusableViewApp: App {
     var body: some Scene {
         WindowGroup {
-            PersonListView()
+            MainView()
         }
     }
 }
