@@ -10,6 +10,7 @@
 		FEAD600E2B03547800DE1E54 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAD600D2B03547800DE1E54 /* Person.swift */; };
 		FEAD60132B03577100DE1E54 /* ScreenTitles.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAD60122B03577100DE1E54 /* ScreenTitles.swift */; };
 		FEAD60152B03583100DE1E54 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = FEAD60142B03583100DE1E54 /* Localizable.xcstrings */; };
+		FEAD60182B035C0F00DE1E54 /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAD60172B035C0F00DE1E54 /* PersonView.swift */; };
 		FECCC6BC2B03501B0010769E /* SwiftUIReusableViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECCC6BB2B03501B0010769E /* SwiftUIReusableViewApp.swift */; };
 		FECCC6BE2B03501B0010769E /* PersonListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECCC6BD2B03501B0010769E /* PersonListView.swift */; };
 		FECCC6C02B03501B0010769E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FECCC6BF2B03501B0010769E /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 		FEAD600D2B03547800DE1E54 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		FEAD60122B03577100DE1E54 /* ScreenTitles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTitles.swift; sourceTree = "<group>"; };
 		FEAD60142B03583100DE1E54 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		FEAD60172B035C0F00DE1E54 /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
 		FECCC6B82B03501B0010769E /* SwiftUIReusableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIReusableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FECCC6BB2B03501B0010769E /* SwiftUIReusableViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIReusableViewApp.swift; sourceTree = "<group>"; };
 		FECCC6BD2B03501B0010769E /* PersonListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListView.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				FECCC6BD2B03501B0010769E /* PersonListView.swift */,
+				FEAD60172B035C0F00DE1E54 /* PersonView.swift */,
 			);
 			path = PersonList;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEAD60182B035C0F00DE1E54 /* PersonView.swift in Sources */,
 				FEAD600E2B03547800DE1E54 /* Person.swift in Sources */,
 				FECCC6BE2B03501B0010769E /* PersonListView.swift in Sources */,
 				FEAD60132B03577100DE1E54 /* ScreenTitles.swift in Sources */,
