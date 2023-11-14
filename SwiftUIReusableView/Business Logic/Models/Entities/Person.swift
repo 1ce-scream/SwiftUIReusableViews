@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct Person  {
+struct Person: Identifiable  {
+    var id: UUID = UUID()
     var fullName: String
     var jobtitle: String
     var affiliation: String
