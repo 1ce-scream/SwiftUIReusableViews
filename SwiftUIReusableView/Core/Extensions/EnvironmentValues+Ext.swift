@@ -20,3 +20,10 @@ extension EnvironmentValues {
         set { self[AvatarEditProfileHandler.self] = newValue }
     }
 }
+
+extension EnvironmentValues {
+    var avatarStyle: any AvatarStyle {
+        get { self[AvatarStyleKey.self] }
+        set { self[AvatarStyleKey.self] = newValue }
+    }
+}

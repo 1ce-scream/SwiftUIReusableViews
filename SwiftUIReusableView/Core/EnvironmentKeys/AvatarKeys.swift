@@ -1,5 +1,5 @@
 //
-//  AvatarImageShapeKey.swift
+//  AvatarKeys.swift
 //  SwiftUIReusableView
 //
 //  Created by Vitaliy Talalay on 14.11.2023.
@@ -13,4 +13,8 @@ struct AvatarImageShapeKey: EnvironmentKey {
 
 struct AvatarEditProfileHandler: EnvironmentKey {
     static var defaultValue: (() -> Void)?
+}
+
+struct AvatarStyleKey: EnvironmentKey {
+    static var defaultValue: any AvatarStyle = DefaultAvatarStyle()
 }

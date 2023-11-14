@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE5BFE212B0377A700A4AF62 /* AvatarStyleConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5BFE202B0377A700A4AF62 /* AvatarStyleConfiguration.swift */; };
+		FE5BFE242B0377F000A4AF62 /* AvatarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5BFE232B0377F000A4AF62 /* AvatarStyle.swift */; };
 		FEAD600E2B03547800DE1E54 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAD600D2B03547800DE1E54 /* Person.swift */; };
 		FEAD60132B03577100DE1E54 /* ScreenTitles.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAD60122B03577100DE1E54 /* ScreenTitles.swift */; };
 		FEAD60152B03583100DE1E54 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = FEAD60142B03583100DE1E54 /* Localizable.xcstrings */; };
 		FEAD60182B035C0F00DE1E54 /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAD60172B035C0F00DE1E54 /* PersonView.swift */; };
 		FEAD601A2B035F5A00DE1E54 /* AvatarImageShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAD60192B035F5A00DE1E54 /* AvatarImageShape.swift */; };
-		FEAD601D2B035FA000DE1E54 /* AvatarImageShapeKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAD601C2B035FA000DE1E54 /* AvatarImageShapeKey.swift */; };
+		FEAD601D2B035FA000DE1E54 /* AvatarKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAD601C2B035FA000DE1E54 /* AvatarKeys.swift */; };
 		FEAD60202B035FFD00DE1E54 /* EnvironmentValues+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAD601F2B035FFD00DE1E54 /* EnvironmentValues+Ext.swift */; };
 		FEAD60222B03606300DE1E54 /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAD60212B03606300DE1E54 /* View+Ext.swift */; };
 		FEAD60252B036BD900DE1E54 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAD60242B036BD900DE1E54 /* MainView.swift */; };
@@ -27,12 +29,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE5BFE202B0377A700A4AF62 /* AvatarStyleConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarStyleConfiguration.swift; sourceTree = "<group>"; };
+		FE5BFE232B0377F000A4AF62 /* AvatarStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarStyle.swift; sourceTree = "<group>"; };
 		FEAD600D2B03547800DE1E54 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		FEAD60122B03577100DE1E54 /* ScreenTitles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTitles.swift; sourceTree = "<group>"; };
 		FEAD60142B03583100DE1E54 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		FEAD60172B035C0F00DE1E54 /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
 		FEAD60192B035F5A00DE1E54 /* AvatarImageShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarImageShape.swift; sourceTree = "<group>"; };
-		FEAD601C2B035FA000DE1E54 /* AvatarImageShapeKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarImageShapeKey.swift; sourceTree = "<group>"; };
+		FEAD601C2B035FA000DE1E54 /* AvatarKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarKeys.swift; sourceTree = "<group>"; };
 		FEAD601F2B035FFD00DE1E54 /* EnvironmentValues+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EnvironmentValues+Ext.swift"; sourceTree = "<group>"; };
 		FEAD60212B03606300DE1E54 /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
 		FEAD60242B036BD900DE1E54 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -58,6 +62,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE5BFE222B0377DE00A4AF62 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FE5BFE232B0377F000A4AF62 /* AvatarStyle.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		FEAD60082B03538400DE1E54 /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +99,7 @@
 		FEAD600B2B0353DD00DE1E54 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FE5BFE222B0377DE00A4AF62 /* Protocols */,
 				FEAD60102B03575000DE1E54 /* Enums */,
 				FEAD60112B03575800DE1E54 /* Entities */,
 			);
@@ -142,7 +155,7 @@
 		FEAD601B2B035F8B00DE1E54 /* EnvironmentKeys */ = {
 			isa = PBXGroup;
 			children = (
-				FEAD601C2B035FA000DE1E54 /* AvatarImageShapeKey.swift */,
+				FEAD601C2B035FA000DE1E54 /* AvatarKeys.swift */,
 			);
 			path = EnvironmentKeys;
 			sourceTree = "<group>";
@@ -177,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				FEAD602C2B036F5F00DE1E54 /* ReminderToggleStyle.swift */,
+				FE5BFE202B0377A700A4AF62 /* AvatarStyleConfiguration.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -298,9 +312,11 @@
 				FEAD600E2B03547800DE1E54 /* Person.swift in Sources */,
 				FEAD60222B03606300DE1E54 /* View+Ext.swift in Sources */,
 				FEAD60252B036BD900DE1E54 /* MainView.swift in Sources */,
-				FEAD601D2B035FA000DE1E54 /* AvatarImageShapeKey.swift in Sources */,
+				FEAD601D2B035FA000DE1E54 /* AvatarKeys.swift in Sources */,
 				FEAD601A2B035F5A00DE1E54 /* AvatarImageShape.swift in Sources */,
+				FE5BFE212B0377A700A4AF62 /* AvatarStyleConfiguration.swift in Sources */,
 				FECCC6BE2B03501B0010769E /* PersonListView.swift in Sources */,
+				FE5BFE242B0377F000A4AF62 /* AvatarStyle.swift in Sources */,
 				FEAD60132B03577100DE1E54 /* ScreenTitles.swift in Sources */,
 				FECCC6BC2B03501B0010769E /* SwiftUIReusableViewApp.swift in Sources */,
 				FEAD60202B035FFD00DE1E54 /* EnvironmentValues+Ext.swift in Sources */,

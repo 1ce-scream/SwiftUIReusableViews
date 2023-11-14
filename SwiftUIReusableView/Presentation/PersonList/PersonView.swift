@@ -8,79 +8,55 @@
 import SwiftUI
 
 struct PersonView: View {
-    @Environment(\.avatarImageShape) private var imageShape
-    @Environment(\.editProfileHandler) private var editProfileHandler
+    @Environment(\.avatarStyle) private var style
     
-    private var person: Person
+    private var title: String
+    private var subTitle: String
+    private var detailsTitle: String
+    private var imageName: String
     
     init(
-        _ person: Person
+        _ title: String,
+        subTitle: String,
+        detailsTitle: String,
+        image name: String
     ) {
-        self.person = person
+        self.title = title
+        self.subTitle = subTitle
+        self.detailsTitle = detailsTitle
+        self.imageName = name
     }
     
     var body: some View {
-        HStack(alignment: .top) {
-            profileImage
-                .onTapGesture {
-                    if let editProfileHandler {
-                        editProfileHandler()
-                    }
-                }
-            
-            VStack(alignment: .leading) {
-                titleLabel
-                detailsLabel(person.jobtitle)
-                detailsLabel(person.affiliation)
-            }
-            
-            Spacer()
-        }
-        .accessibilityElement(children: .contain)
-        .accessibilityLabel(person.fullName)
-    }
-}
-
-private extension PersonView {
-    @ViewBuilder
-    private var profileImage: some View {
-        if imageShape == .round {
-            Image(person.profileImageName)
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(width: 75, height: 75, alignment: .center)
-                .clipShape(.circle)
-                .accessibilityLabel(person.fullName)
-        } else {
-            Image(person.profileImageName)
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(width: 75, height: 75, alignment: .center)
-                .accessibilityLabel(person.fullName)
-        }
-    }
-    
-    private var titleLabel: some View {
-        Text(person.fullName)
-            .font(.headline)
-    }
-    
-    private func detailsLabel(_ text: String) -> some View {
-        Text(text)
-            .font(.subheadline)
+        let configuration = AvatarStyleConfiguration(
+            title: title,
+            subTitle: subTitle,
+            detailsTitle: detailsTitle,
+            imageName: imageName
+        )
+        
+        AnyView(style.resolve(configuration: configuration))
     }
 }
 
 #Preview {
     VStack {
-        PersonView(Person.sample)
-            .padding()
-            .avatarImageShape(.rectangle)
-            .onEditProfile {
-                print("You've tapped on the profile image!")
-            }
+        let person = Person.sample
         
-        PersonView(Person.sample)
-            .padding()
+        PersonView(person.fullName,
+                   subTitle: person.jobtitle,
+                   detailsTitle: person.affiliation,
+                   image: person.profileImageName)
+        .avatarImageShape(.rectangle)
+        .onEditProfile {
+            print("You've tapped on the profile image!")
+        }
+        .padding()
+        
+        PersonView(person.fullName,
+                   subTitle: person.jobtitle,
+                   detailsTitle: person.affiliation,
+                   image: person.profileImageName)
+        .padding()
     }
 }

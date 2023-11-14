@@ -18,3 +18,9 @@ extension View {
         environment(\.editProfileHandler, editProfileHandler)
     }
 }
+
+extension View {
+    func avatarStyle(_ style: some AvatarStyle) -> some View {
+        environment(\.avatarStyle, style)
+    }
+}

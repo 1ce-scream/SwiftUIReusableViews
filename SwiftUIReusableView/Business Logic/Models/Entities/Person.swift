@@ -34,7 +34,7 @@ extension Person {
         .init(fullName: "Daniel Tull", jobtitle: "Cocoa developer", affiliation: "Cascable"),
         .init(fullName: "Evgenii Matsiuk", jobtitle: "Co-Founder", affiliation: "MarathonLabs"),
         .init(fullName: "Leah Vogel", jobtitle: "Senior Engineering Manager", affiliation: "Chegg"),
-        .init(fullName: "Lena Mattea Stöxen", jobtitle: "Student", affiliation: "Volkswagen Commercial Vehicles"),
+        .init(fullName: "Lena Mattea Stoxen", jobtitle: "Student", affiliation: "Volkswagen Commercial Vehicles"),
         .init(fullName: "Luke Stringer", jobtitle: "Tech Principal", affiliation: "AND Digital"),
         .init(fullName: "Michael Baldock", jobtitle: "Senior Software Engineer", affiliation: "Skyscanner"),
         .init(fullName: "Mike Abdullah", jobtitle: "Lead iOS & Mac Developer", affiliation: "Karelia Software"),
