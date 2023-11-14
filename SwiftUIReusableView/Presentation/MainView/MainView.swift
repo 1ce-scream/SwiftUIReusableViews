@@ -16,7 +16,7 @@ struct MainView: View {
                 }
                 
                 NavigationLink("main.view.link.title.custom.toggle") {
-                    PersonListView()
+                    TodoListView()
                 }
             }
             .navigationTitle(ScreenTitles.mainView.localized())

@@ -16,6 +16,10 @@
 		FEAD60202B035FFD00DE1E54 /* EnvironmentValues+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAD601F2B035FFD00DE1E54 /* EnvironmentValues+Ext.swift */; };
 		FEAD60222B03606300DE1E54 /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAD60212B03606300DE1E54 /* View+Ext.swift */; };
 		FEAD60252B036BD900DE1E54 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAD60242B036BD900DE1E54 /* MainView.swift */; };
+		FEAD60272B036E0400DE1E54 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAD60262B036E0400DE1E54 /* Todo.swift */; };
+		FEAD602A2B036E3400DE1E54 /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAD60292B036E3400DE1E54 /* TodoListView.swift */; };
+		FEAD602D2B036F5F00DE1E54 /* ReminderToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAD602C2B036F5F00DE1E54 /* ReminderToggleStyle.swift */; };
+		FEAD602F2B0370D500DE1E54 /* ToggleStyle+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAD602E2B0370D500DE1E54 /* ToggleStyle+Ext.swift */; };
 		FECCC6BC2B03501B0010769E /* SwiftUIReusableViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECCC6BB2B03501B0010769E /* SwiftUIReusableViewApp.swift */; };
 		FECCC6BE2B03501B0010769E /* PersonListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECCC6BD2B03501B0010769E /* PersonListView.swift */; };
 		FECCC6C02B03501B0010769E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FECCC6BF2B03501B0010769E /* Assets.xcassets */; };
@@ -32,6 +36,10 @@
 		FEAD601F2B035FFD00DE1E54 /* EnvironmentValues+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EnvironmentValues+Ext.swift"; sourceTree = "<group>"; };
 		FEAD60212B03606300DE1E54 /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
 		FEAD60242B036BD900DE1E54 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		FEAD60262B036E0400DE1E54 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		FEAD60292B036E3400DE1E54 /* TodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListView.swift; sourceTree = "<group>"; };
+		FEAD602C2B036F5F00DE1E54 /* ReminderToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderToggleStyle.swift; sourceTree = "<group>"; };
+		FEAD602E2B0370D500DE1E54 /* ToggleStyle+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ToggleStyle+Ext.swift"; sourceTree = "<group>"; };
 		FECCC6B82B03501B0010769E /* SwiftUIReusableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIReusableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FECCC6BB2B03501B0010769E /* SwiftUIReusableViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIReusableViewApp.swift; sourceTree = "<group>"; };
 		FECCC6BD2B03501B0010769E /* PersonListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListView.swift; sourceTree = "<group>"; };
@@ -63,6 +71,7 @@
 			children = (
 				FEAD60232B036BCD00DE1E54 /* MainView */,
 				FEAD600F2B03557B00DE1E54 /* PersonList */,
+				FEAD60282B036E1100DE1E54 /* TodoList */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -87,6 +96,7 @@
 		FEAD600C2B0353E700DE1E54 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				FEAD602B2B036F5400DE1E54 /* Styles */,
 				FEAD601E2B035FE500DE1E54 /* Extensions */,
 				FEAD601B2B035F8B00DE1E54 /* EnvironmentKeys */,
 			);
@@ -115,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				FEAD600D2B03547800DE1E54 /* Person.swift */,
+				FEAD60262B036E0400DE1E54 /* Todo.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -141,6 +152,7 @@
 			children = (
 				FEAD601F2B035FFD00DE1E54 /* EnvironmentValues+Ext.swift */,
 				FEAD60212B03606300DE1E54 /* View+Ext.swift */,
+				FEAD602E2B0370D500DE1E54 /* ToggleStyle+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -151,6 +163,22 @@
 				FEAD60242B036BD900DE1E54 /* MainView.swift */,
 			);
 			path = MainView;
+			sourceTree = "<group>";
+		};
+		FEAD60282B036E1100DE1E54 /* TodoList */ = {
+			isa = PBXGroup;
+			children = (
+				FEAD60292B036E3400DE1E54 /* TodoListView.swift */,
+			);
+			path = TodoList;
+			sourceTree = "<group>";
+		};
+		FEAD602B2B036F5400DE1E54 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				FEAD602C2B036F5F00DE1E54 /* ReminderToggleStyle.swift */,
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 		FECCC6AF2B03501A0010769E = {
@@ -262,7 +290,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEAD602D2B036F5F00DE1E54 /* ReminderToggleStyle.swift in Sources */,
+				FEAD602F2B0370D500DE1E54 /* ToggleStyle+Ext.swift in Sources */,
+				FEAD60272B036E0400DE1E54 /* Todo.swift in Sources */,
 				FEAD60182B035C0F00DE1E54 /* PersonView.swift in Sources */,
+				FEAD602A2B036E3400DE1E54 /* TodoListView.swift in Sources */,
 				FEAD600E2B03547800DE1E54 /* Person.swift in Sources */,
 				FEAD60222B03606300DE1E54 /* View+Ext.swift in Sources */,
 				FEAD60252B036BD900DE1E54 /* MainView.swift in Sources */,
