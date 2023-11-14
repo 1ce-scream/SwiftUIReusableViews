@@ -12,3 +12,9 @@ extension View {
         environment(\.avatarImageShape, imageShape)
     }
 }
+
+extension View {
+    public func onEditProfile(editProfileHandler: @escaping () -> Void) -> some View {
+        environment(\.editProfileHandler, editProfileHandler)
+    }
+}

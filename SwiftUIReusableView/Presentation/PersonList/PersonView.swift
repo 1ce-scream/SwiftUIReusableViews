@@ -9,6 +9,8 @@ import SwiftUI
 
 struct PersonView: View {
     @Environment(\.avatarImageShape) private var imageShape
+    @Environment(\.editProfileHandler) private var editProfileHandler
+    
     private var person: Person
     
     init(
@@ -20,6 +22,11 @@ struct PersonView: View {
     var body: some View {
         HStack(alignment: .top) {
             profileImage
+                .onTapGesture {
+                    if let editProfileHandler {
+                        editProfileHandler()
+                    }
+                }
             
             VStack(alignment: .leading) {
                 titleLabel
@@ -69,6 +76,9 @@ private extension PersonView {
         PersonView(Person.sample)
             .padding()
             .avatarImageShape(.rectangle)
+            .onEditProfile {
+                print("You've tapped on the profile image!")
+            }
         
         PersonView(Person.sample)
             .padding()

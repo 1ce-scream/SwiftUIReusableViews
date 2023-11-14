@@ -8,5 +8,9 @@
 import protocol SwiftUI.EnvironmentKey
 
 struct AvatarImageShapeKey: EnvironmentKey {
-  static var defaultValue: AvatarImageShape = .round
+    static var defaultValue: AvatarImageShape = .round
+}
+
+struct AvatarEditProfileHandler: EnvironmentKey {
+    static var defaultValue: (() -> Void)?
 }

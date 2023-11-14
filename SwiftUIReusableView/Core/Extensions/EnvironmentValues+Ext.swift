@@ -13,3 +13,10 @@ extension EnvironmentValues {
         set { self[AvatarImageShapeKey.self] = newValue }
     }
 }
+
+extension EnvironmentValues {
+    var editProfileHandler: (() -> Void)? {
+        get { self[AvatarEditProfileHandler.self] }
+        set { self[AvatarEditProfileHandler.self] = newValue }
+    }
+}
