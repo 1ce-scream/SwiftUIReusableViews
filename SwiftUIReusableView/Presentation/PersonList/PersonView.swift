@@ -8,15 +8,13 @@
 import SwiftUI
 
 struct PersonView: View {
+    @Environment(\.avatarImageShape) private var imageShape
     private var person: Person
-    private var isRound: Bool
     
     init(
-        _ person: Person,
-        isRound: Bool = true
+        _ person: Person
     ) {
         self.person = person
-        self.isRound = isRound
     }
     
     var body: some View {
@@ -39,7 +37,7 @@ struct PersonView: View {
 private extension PersonView {
     @ViewBuilder
     private var profileImage: some View {
-        if isRound {
+        if imageShape == .round {
             Image(person.profileImageName)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
@@ -70,7 +68,9 @@ private extension PersonView {
     VStack {
         PersonView(Person.sample)
             .padding()
-        PersonView(Person.sample, isRound: false)
+            .avatarImageShape(.rectangle)
+        
+        PersonView(Person.sample)
             .padding()
     }
 }
