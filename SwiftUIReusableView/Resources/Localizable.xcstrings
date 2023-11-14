@@ -1,6 +1,23 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "person.list.participants.section.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Participants"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Участники"
+          }
+        }
+      }
+    },
     "person.list.screen.title" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -14,6 +31,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Люди"
+          }
+        }
+      }
+    },
+    "person.list.speakers.section.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Speakers"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Рассказчики"
           }
         }
       }
