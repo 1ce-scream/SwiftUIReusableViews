@@ -32,6 +32,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FEAD60082B03538400DE1E54 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FECCC6BB2B03501B0010769E /* SwiftUIReusableViewApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FEAD60092B03539200DE1E54 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				FECCC6BD2B03501B0010769E /* ContentView.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		FEAD600A2B0353C400DE1E54 /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+				FEAD600B2B0353DD00DE1E54 /* Models */,
+			);
+			path = "Business Logic";
+			sourceTree = "<group>";
+		};
+		FEAD600B2B0353DD00DE1E54 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FEAD600C2B0353E700DE1E54 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		FECCC6AF2B03501A0010769E = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +89,10 @@
 		FECCC6BA2B03501B0010769E /* SwiftUIReusableView */ = {
 			isa = PBXGroup;
 			children = (
-				FECCC6BB2B03501B0010769E /* SwiftUIReusableViewApp.swift */,
-				FECCC6BD2B03501B0010769E /* ContentView.swift */,
+				FEAD60082B03538400DE1E54 /* App */,
+				FEAD60092B03539200DE1E54 /* Presentation */,
+				FEAD600A2B0353C400DE1E54 /* Business Logic */,
+				FEAD600C2B0353E700DE1E54 /* Core */,
 				FECCC6BF2B03501B0010769E /* Assets.xcassets */,
 				FECCC6C12B03501B0010769E /* Preview Content */,
 			);
