@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FEAD600E2B03547800DE1E54 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAD600D2B03547800DE1E54 /* Person.swift */; };
 		FECCC6BC2B03501B0010769E /* SwiftUIReusableViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECCC6BB2B03501B0010769E /* SwiftUIReusableViewApp.swift */; };
 		FECCC6BE2B03501B0010769E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECCC6BD2B03501B0010769E /* ContentView.swift */; };
 		FECCC6C02B03501B0010769E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FECCC6BF2B03501B0010769E /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FEAD600D2B03547800DE1E54 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		FECCC6B82B03501B0010769E /* SwiftUIReusableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIReusableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FECCC6BB2B03501B0010769E /* SwiftUIReusableViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIReusableViewApp.swift; sourceTree = "<group>"; };
 		FECCC6BD2B03501B0010769E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 		FEAD600B2B0353DD00DE1E54 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FEAD600D2B03547800DE1E54 /* Person.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEAD600E2B03547800DE1E54 /* Person.swift in Sources */,
 				FECCC6BE2B03501B0010769E /* ContentView.swift in Sources */,
 				FECCC6BC2B03501B0010769E /* SwiftUIReusableViewApp.swift in Sources */,
 			);

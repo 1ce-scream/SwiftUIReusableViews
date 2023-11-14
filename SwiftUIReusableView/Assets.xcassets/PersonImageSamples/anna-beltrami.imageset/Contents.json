@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "anna-beltrami.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
